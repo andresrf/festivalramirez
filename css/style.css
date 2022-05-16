@@ -108,7 +108,11 @@ justify-content: center;
 
 }
 
+.horario1:hover{
+    background-color: black;
+    color: #EFEFEF;
 
+}
 
 .horario2{
 background-color: #EFEFEF;
@@ -122,7 +126,11 @@ justify-content: center;
 
 }
 
+.horario2:hover{
+    background-color: black;
+    color: #EFEFEF;
 
+}
 
 
 .horario3{
@@ -137,7 +145,11 @@ justify-content: center;
 
 }
 
+.horario3:hover{
+    background-color: black;
+    color: #EFEFEF;
 
+}
 
 .beneficios{
 background-color: rgb(217, 187, 239);
