@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EFEFEF;
+}
+
+.mainclass{
+    display: grid;
+  
+    grid-template-areas: 
+                         "top"
+                         "horarios"
+                         "beneficios"
+                         "video"
+                         "extras"
+                         ;
+}
+
+
+
+.seccion-top{
+    grid-area: top;
+   
+}
+
+.seccion-horarios{
+    grid-area: horarios;
+    
+}
+
+.beneficios{
+    grid-area: beneficios;
+   
+}
+
+
+.seccion-video{
+    grid-area: video;
+}
+
+.extras{
+    grid-area: extras;
+    
+}
+
+.seccion-top{
+    background-color: azure;
+    height: 500px;
+}
+
+.seccion-top h1{
+    font-size: 70px;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+nav{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 50px;
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    
+    margin-top: 12px;
+    padding-right: 10px;
+    
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+
+.seccion-horarios{
+
+background-color: #d8d8d8;
+height: 500px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+.horario1{
+background-color: #EFEFEF;
+height: 400px;
+width: 300px;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+.horario2{
+background-color: #EFEFEF;
+height: 400px;
+width: 300px;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+
+.horario3{
+background-color: #EFEFEF;
+height: 400px;
+width: 300px;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+.beneficios{
+background-color: rgb(217, 187, 239);
+height: 500px;
+display: flex;
+justify-content: space-around;
+
+}
+
+.beneficios_img img{
+    height: 400px;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.beneficios_texto{
+    height: 400px;
+    width: 400px;
+    margin-top: 90px;
+}
+
+.extras{
+    background-color: rgb(217, 187, 239);
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    
+    .extras_img img{
+        height: 400px;
+        width: 400px;
+        margin-top: 40px;
+    }
+    
+    .extras_texto{
+        height: 400px;
+        width: 400px;
+        margin-top: 90px;
+    }
+
+.seccion-video{
+
+background-color: #FAC6BA;
+height:500px ;
+display: flex;
+justify-content: center;
+}
+
+.videoframe{
+    margin-top: 80px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    text-align: center;
+    color:#EFEFEF ;
+}
+
+@media screen and (max-width: 420px) {
+
+  header{
+      
+       display: flex;
+       justify-content: center;
+   }
+
+  
+
+    .mainclass{
+        display: grid;
+      
+        grid-template-areas: 
+                             "top"
+                             "horarios"
+                             "beneficios"
+                             "video"
+                             "extras"
+                             ;
+    }
+    
+   
+
+    .seccion-top{
+        grid-area: top;
+        width: 420px;
+       
+    }
+
+    .seccion-horarios{
+        grid-area: horarios;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        width: 420px;
+
+       
+    }
+
+    .beneficios{
+        grid-area: beneficios;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+
+        height: 650px;
+        width: 420px;
+       
+    }
+    
+
+    .seccion-video{
+        grid-area: video;
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    }
+
+    .extras{
+        grid-area: extras;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        height: 650px;
+        align-items: center;
+        justify-content: center;
+        width: 420px;
+
+        
+    }
+    
+    
+    
+   
+
+}
