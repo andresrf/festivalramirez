@@ -77,12 +77,19 @@ nav ul li {
     
 }
 
+
+
+nav ul li a:hover{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
 nav ul li a{
     color: black;
     text-decoration: none;
 
 }
-
 
 
 
@@ -293,7 +300,11 @@ footer p{
         
     }
     
-    
+    nav{
+        padding-right: 0;
+        width: 100%;
+        justify-content: center;
+    }
     
    
 
