@@ -1,0 +1,338 @@
+@import "base/extend";
+
+
+nav{
+   @extend %navegacion;
+
+  ul li {
+
+    display: inline-block;
+    
+    margin-top: 12px;
+    padding-right: 10px;
+    
+   }
+
+
+
+  ul li a:hover{
+    color: blueviolet;
+    font-weight: bold;
+  }
+
+
+  ul li a{
+    color: black;
+    text-decoration: none;
+
+  }
+
+}  
+
+.mainclass{
+    display: grid;
+  
+    grid-template-areas: 
+                         "top"
+                         "horarios"
+                         "beneficios"
+                         "video"
+                         "extras"
+                         ;
+
+  .seccion-top{
+    grid-area: top;
+   
+  }
+
+  .seccion-horarios{
+    grid-area: horarios;
+    
+  }
+
+  .beneficios{
+    grid-area: beneficios;
+   
+  }
+
+
+  .seccion-video{
+    grid-area: video;
+  }
+
+  .extras{
+    grid-area: extras;
+    
+   }
+
+  .seccion-top{
+    background-color: azure;
+    height: 500px;
+  
+
+     h1{
+    font-size: 70px;
+    padding-top: 100px;
+    padding-left: 80px;
+    }
+  }
+   .seccion-horarios{
+
+    background-color: #d8d8d8;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    }
+    
+    .horario1{
+    background-color: #EFEFEF;
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    .horario1:hover{
+        background-color: black;
+        color: #EFEFEF;
+    
+    }
+    
+    .horario2{
+    background-color: #EFEFEF;
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    .horario2:hover{
+        background-color: black;
+        color: #EFEFEF;
+    
+    }
+    
+    
+    .horario3{
+    background-color: #EFEFEF;
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    .horario3:hover{
+        background-color: black;
+        color: #EFEFEF;
+    
+    }
+    
+    .beneficios{
+    background-color: rgb(217, 187, 239);
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    
+      .beneficios_img img{
+        height: 400px;
+        width: 400px;
+        margin-top: 40px;
+      }
+    
+      .beneficios_texto{
+        height: 400px;
+        width: 400px;
+        margin-top: 90px;
+       }
+    }
+
+
+    .extras{
+        background-color: rgb(217, 187, 239);
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        
+        
+        
+        .extras_img img{
+            height: 400px;
+            width: 400px;
+            margin-top: 40px;
+        }
+        
+        .extras_texto{
+            height: 400px;
+            width: 400px;
+            margin-top: 90px;
+        }
+    }
+    .seccion-video{
+    
+    background-color: #FAC6BA;
+    height:500px ;
+    display: flex;
+    justify-content: center;
+    
+    
+       .videoframe{
+        margin-top: 80px;
+       }
+    }
+}
+
+main{
+
+    .form {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+
+.beneficios{
+    background-color: rgb(217, 187, 239);
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    
+      .beneficios_img img{
+        height: 400px;
+        width: 400px;
+        margin-top: 40px;
+      }
+    
+      .beneficios_texto{
+        height: 400px;
+        width: 400px;
+        margin-top: 90px;
+       }
+    }
+
+
+.seccion-top{
+    background-color: azure;
+    height: 500px;
+   
+    h1{
+        font-size: 70px;
+        padding-top: 100px;
+        padding-left: 80px;
+       }
+}
+
+
+footer{
+    background-color: black;
+
+
+   p{
+    text-align: center;
+    color:#EFEFEF ;
+   }
+}  
+
+
+
+@media screen and (max-width: 420px) {
+
+    header{
+        
+         display: flex;
+         justify-content: center;
+     
+  
+       nav{
+        padding-right: 0;
+        width: 100%;
+        justify-content: center;
+       }
+    }
+  
+    .mainclass{
+          display: grid;
+        
+          grid-template-areas: 
+                               "top"
+                               "horarios"
+                               "beneficios"
+                               "video"
+                               "extras"
+                               ;
+      
+      
+     
+  
+        .seccion-top{
+          grid-area: top;
+          width: 420px;
+         
+        }
+  
+        .seccion-horarios{
+          grid-area: horarios;
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          align-items: center;
+          justify-content: center;
+          width: 420px;
+  
+         
+        }
+  
+        .beneficios{
+          grid-area: beneficios;
+          display: flex;
+          flex-direction: column;
+          align-content: space-between;
+          align-items: center;
+          justify-content: center;
+  
+          height: 650px;
+          width: 420px;
+         
+        }
+      
+  
+        .seccion-video{
+          grid-area: video;
+          display: flex;
+          flex-direction: column;
+          width: 420px;
+        }
+  
+        .extras{
+          grid-area: extras;
+          display: flex;
+          flex-direction: column;
+          align-content: space-between;
+          height: 650px;
+          align-items: center;
+          justify-content: center;
+          width: 420px;
+  
+        }
+      
+      }  
+        
+      
+     
+  
+  }
