@@ -1,5 +1,10 @@
 @import "base/extend";
 
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 nav{
    @extend %navegacion;
@@ -68,14 +73,25 @@ nav{
   .seccion-top{
     background-color: azure;
     height: 500px;
-  
+    position: relative;
+    
+    
+    img{
+      width: 100%;
+      height: 500px;
+      opacity: 40%;
+      filter: brightness(80%);
+    }
 
-     h1{
+    .texto-encima{
+    position: absolute;
     font-size: 70px;
-    padding-top: 100px;
-    padding-left: 80px;
+    top: 100px;
+    left: 80px;
     }
   }
+
+  
    .seccion-horarios{
 
     background-color: #d8d8d8;
@@ -191,6 +207,7 @@ nav{
     
        .videoframe{
         margin-top: 80px;
+    
        }
     }
 }
@@ -200,8 +217,12 @@ main{
     .form {
         display: flex;
         justify-content: center;
+        height: 520px;
+       
 
     }
+
+    
 }
 
 
@@ -237,10 +258,134 @@ main{
        }
 }
 
+.seccion-top-music{
+  height: 500px;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 500px;
+    opacity: 70%;
+    filter: blur(4px);
+  }
+
+  .texto-encima{
+    position: absolute;
+    font-size: 70px;
+    top: 100px;
+    left: 80px;
+    }
+
+
+}
+
+.seccion-top-shop{
+  height: 500px;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 500px;
+    opacity: 70%;
+    filter: blur(4px);
+  }
+
+  .texto-encima{
+    position: absolute;
+    font-size: 70px;
+    top: 100px;
+    left: 80px;
+    }
+
+
+}
+
+.seccion-top-plan{
+  height: 500px;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 500px;
+    opacity: 70%;
+    filter: blur(4px);
+  }
+
+  .texto-encima{
+    position: absolute;
+    font-size: 70px;
+    top: 100px;
+    left: 80px;
+    }
+
+
+}
+
+
+
+.seccion-top-experience{
+  height: 500px;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 500px;
+    opacity: 70%;
+    filter: blur(4px);
+  }
+
+  .texto-encima{
+    position: absolute;
+    font-size: 70px;
+    top: 100px;
+    left: 80px;
+    }
+
+
+}
+
+
+.seccion-top-contact{
+
+  height: 180px;
+  background-color: azure;
+
+  h1{
+    font-size: 70px;
+    padding-top: 100px;
+    padding-left: 80px;
+   }
+}
+
+
 
 footer{
     background-color: black;
+    padding-top: 20px;
 
+   .iconos-redes-sociales{
+
+    display: flex;
+    justify-content: center;
+    
+    
+
+    .icono-fbk img{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    } 
+    
+    .icono-ig img{
+     width: 40px;
+     height: 40px;
+     margin-left: 10px;
+   } 
+
+
+   }   
+
+ 
 
    p{
     text-align: center;
@@ -305,7 +450,7 @@ footer{
           align-items: center;
           justify-content: center;
   
-          height: 650px;
+          height: 700px;
           width: 420px;
          
         }
@@ -316,6 +461,13 @@ footer{
           display: flex;
           flex-direction: column;
           width: 420px;
+          height: 420px;
+          padding-bottom: 80px;
+
+          .videoframe iframe{
+            
+            width: 100%;
+           }
         }
   
         .extras{
@@ -323,7 +475,7 @@ footer{
           display: flex;
           flex-direction: column;
           align-content: space-between;
-          height: 650px;
+          height: 680px;
           align-items: center;
           justify-content: center;
           width: 420px;
@@ -332,6 +484,17 @@ footer{
       
       }  
         
+      .beneficios{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+
+        height: 650px;
+        width: 420px;
+       
+      }
       
      
   
